@@ -65,6 +65,7 @@ keys = [
         desc="Toggle between split and unsplit sides of stack",
     ),
     Key([mod], "b", lazy.spawn("chromium"), desc="Launch Chromium Browser"),
+    Key([mod], "d", lazy.spawn("discord")),
     Key([mod], "g", lazy.spawn("github-desktop"), desc="Launch Github Desktop"),
     Key([mod], "f", lazy.window.toggle_fullscreen()),
     Key([mod], "j", lazy.spawn("joplin-desktop"), desc="Launch joplin Desktop"),
