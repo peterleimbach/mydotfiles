@@ -64,6 +64,7 @@ keys = [
         lazy.layout.toggle_split(),
         desc="Toggle between split and unsplit sides of stack",
     ),
+    Key([mod], "a", lazy.spawn("minder /home/peter/myCloud/Minder/ToDos.minder")),
     Key([mod], "b", lazy.spawn("chromium"), desc="Launch Chromium Browser"),
     Key([mod], "d", lazy.spawn("discord")),
     Key([mod], "g", lazy.spawn("github-desktop"), desc="Launch Github Desktop"),
@@ -81,6 +82,10 @@ keys = [
     Key([mod, "control"], "r", lazy.reload_config(), desc="Reload the config"),
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
     Key([], "Print", lazy.spawn("spectacle"), desc="screenshot"),
+    Key([], "XF86MonBrightnessUp", lazy.spawn("brightnessctl s 10%+")),
+    Key([], "XF86MonBrightnessDown", lazy.spawn("brightnessctl s 10%-")),
+    Key([], "XF86AudioRaiseVolume", lazy.spawn("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+")),
+    Key([], "XF86AudioLowerVolume", lazy.spawn("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-")),
 ]
 
 groups = [Group(i) for i in "123456789"]
