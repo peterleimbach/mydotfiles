@@ -64,6 +64,7 @@ keys = [
         lazy.layout.toggle_split(),
         desc="Toggle between split and unsplit sides of stack",
     ),
+    Key([mod], "a", lazy.spawn("minder /home/peter/myCloud/Minder/ToDos.minder")),
     Key([mod], "b", lazy.spawn("chromium"), desc="Launch Chromium Browser"),
     Key([mod], "g", lazy.spawn("github-desktop"), desc="Launch Github Desktop"),
     Key([mod], "f", lazy.window.toggle_fullscreen()),
