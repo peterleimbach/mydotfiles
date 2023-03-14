@@ -66,6 +66,7 @@ keys = [
     ),
     Key([mod], "a", lazy.spawn("minder /home/peter/myCloud/Minder/ToDos.minder")),
     Key([mod], "b", lazy.spawn("chromium"), desc="Launch Chromium Browser"),
+    Key([mod], "d", lazy.spawn("discord")),
     Key([mod], "g", lazy.spawn("github-desktop"), desc="Launch Github Desktop"),
     Key([mod], "f", lazy.window.toggle_fullscreen()),
     Key([mod], "j", lazy.spawn("joplin-desktop"), desc="Launch joplin Desktop"),
